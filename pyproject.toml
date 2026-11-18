@@ -1,7 +1,7 @@
 [project]
 name = "tafe"
 version = "0.1.0"
-description = "Add your description here"
+description = "Excel-based customer payment reminder automation"
 readme = "README.md"
 authors = [
     { name = "Parthavi5654", email = "parthavichovatiya308@gmail.com" }
@@ -9,6 +9,10 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "pip>=26.2.2",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "requests>=2.34.2",
+    "python-dotenv>=1.2.4",
 ]
 
 [project.scripts]
@@ -17,3 +21,7 @@ tafe = "tafe:main"
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = "src"
+module-name = "tafe"
