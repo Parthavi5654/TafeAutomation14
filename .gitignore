@@ -25,3 +25,13 @@ token.json
 
 # Logs
 *.log
+
+# Ignore Excel files inside data folder
+data/*.xlsx
+data/*.xls
+data/*.xlsm
+
+# Ignore SQLite databases
+data/*.db
+data/*.sqlite
+data/*.sqlite3
